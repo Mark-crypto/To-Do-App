@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
-import { Checkbox } from "@/components/ui/checkbox";
 
-const SingleItem = () => {
+const SingleItem = ({ task, date }: { task: string; date: string }) => {
   return (
     <>
       <Card>
-        <h4>Read 48 Laws of power</h4>
-        <Checkbox />
+        <h4>{task || ""}</h4>
+        <p>{date || ""}</p>
+        <input type="checkbox" name="" id="" />
       </Card>
     </>
   );

@@ -5,13 +5,17 @@ import Navbar from "./components/Navbar";
 import { Trash2 } from "lucide-react";
 
 function App() {
+  const clearAll = () => {
+    localStorage.clear();
+  };
   return (
     <>
       <Navbar />
       <div>
         <AddBtn />
         <Dropdown />
-        <button type="button">
+
+        <button type="button" onClick={clearAll}>
           <Trash2 />
           Clear All
         </button>
