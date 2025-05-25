@@ -1,4 +1,10 @@
+import SingleItem from "./SingleItem";
+
 const List = () => {
-  return <div>List</div>;
+  return (
+    <>
+      <SingleItem />
+    </>
+  );
 };
 export default List;
